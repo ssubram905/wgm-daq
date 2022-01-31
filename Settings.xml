@@ -1,0 +1,256 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>20.0.1</Version>
+<Cluster>
+<Name>Settings</Name>
+<NumElts>5</NumElts>
+<Array>
+<Name>Calibration Array</Name>
+<Dimsize>2</Dimsize>
+<Cluster>
+<Name>Cluster</Name>
+<NumElts>2</NumElts>
+<DBL>
+<Name>Slope</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Offset</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Cluster</Name>
+<NumElts>2</NumElts>
+<DBL>
+<Name>Slope</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Offset</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+</Array>
+<Array>
+<Name>Hardware Config Cluster</Name>
+<Dimsize>2</Dimsize>
+<Cluster>
+<Name>Hardware Config Cluster</Name>
+<NumElts>5</NumElts>
+<DAQChannel>
+<Name>Physical channels</Name>
+<Val>Dev1/ai0</Val>
+</DAQChannel>
+<String>
+<Name>Channel Name</Name>
+<Val>pd</Val>
+</String>
+<I32>
+<Name>Unit</Name>
+<Val>0</Val>
+</I32>
+<DBL>
+<Name>Min Voltage</Name>
+<Val>-1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Max Voltage</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Hardware Config Cluster</Name>
+<NumElts>5</NumElts>
+<DAQChannel>
+<Name>Physical channels</Name>
+<Val>Dev1/ai1</Val>
+</DAQChannel>
+<String>
+<Name>Channel Name</Name>
+<Val>pdh</Val>
+</String>
+<I32>
+<Name>Unit</Name>
+<Val>0</Val>
+</I32>
+<DBL>
+<Name>Min Voltage</Name>
+<Val>-0.50000000000000</Val>
+</DBL>
+<DBL>
+<Name>Max Voltage</Name>
+<Val>0.50000000000000</Val>
+</DBL>
+</Cluster>
+</Array>
+<Cluster>
+<Name>Trigger Settings</Name>
+<NumElts>8</NumElts>
+<EL>
+<Name>Trigger Type</Name>
+<Choice>No Trigger</Choice>
+<Choice>Digital Start</Choice>
+<Choice>Digital Pause</Choice>
+<Choice>Digital Reference</Choice>
+<Choice>Analog Start</Choice>
+<Choice>Analog Pause</Choice>
+<Choice>Analog Reference</Choice>
+<Choice>Time Start</Choice>
+<Val>0</Val>
+</EL>
+<Cluster>
+<Name>Digital Start</Name>
+<NumElts>2</NumElts>
+<DAQChannel>
+<Name>Source</Name>
+<Val></Val>
+</DAQChannel>
+<I32>
+<Name>Digital Start Trigger Edge</Name>
+<Val>10280</Val>
+</I32>
+</Cluster>
+<Cluster>
+<Name>Digital Pause</Name>
+<NumElts>2</NumElts>
+<DAQChannel>
+<Name>Source</Name>
+<Val></Val>
+</DAQChannel>
+<I32>
+<Name>Digital Pause Trigger Pause When</Name>
+<Val>10192</Val>
+</I32>
+</Cluster>
+<Cluster>
+<Name>Digital Reference</Name>
+<NumElts>3</NumElts>
+<DAQChannel>
+<Name>Source</Name>
+<Val></Val>
+</DAQChannel>
+<I32>
+<Name>Digital Start Trigger Edge</Name>
+<Val>10280</Val>
+</I32>
+<U32>
+<Name>Digital Reference Pretrigger Samples</Name>
+<Val>0</Val>
+</U32>
+</Cluster>
+<Cluster>
+<Name>Analog Start</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Source</Name>
+<Val></Val>
+</String>
+<I32>
+<Name>Analog Slope</Name>
+<Val>10280</Val>
+</I32>
+<DBL>
+<Name>Analog Start Trigger Hysteresis</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Analog Start Trigger Level</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Analog Pause</Name>
+<NumElts>3</NumElts>
+<String>
+<Name>Source</Name>
+<Val></Val>
+</String>
+<DBL>
+<Name>Analog Start Trigger Level</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<I32>
+<Name>Analog Pause Trigger Pause When</Name>
+<Val>10093</Val>
+</I32>
+</Cluster>
+<Cluster>
+<Name>Analog Reference</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Source</Name>
+<Val></Val>
+</String>
+<I32>
+<Name>Slope</Name>
+<Val>10280</Val>
+</I32>
+<U32>
+<Name>Pretrigger Samples</Name>
+<Val>0</Val>
+</U32>
+<DBL>
+<Name>Level</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Time Start</Name>
+<NumElts>2</NumElts>
+<Boolean>
+<Name>Select Time
+Manually</Name>
+<Val>0</Val>
+</Boolean>
+<Timestamp>
+<Name>When</Name>
+<Cluster>
+<Name></Name>
+<NumElts>4</NumElts>
+<I32>
+<Name></Name>
+<Val>0</Val>
+</I32>
+<I32>
+<Name></Name>
+<Val>0</Val>
+</I32>
+<I32>
+<Name></Name>
+<Val>0</Val>
+</I32>
+<I32>
+<Name></Name>
+<Val>0</Val>
+</I32>
+</Cluster>
+</Timestamp>
+</Cluster>
+</Cluster>
+<Path>
+<Name>Log File Base Path</Name>
+<Val>C:\Logged Files\27Jan2022\test.tdms</Val>
+</Path>
+<Cluster>
+<Name>DAQmx Timing Settings</Name>
+<NumElts>4</NumElts>
+<DBL>
+<Name>rate</Name>
+<Val>1000000.00000000000000</Val>
+</DBL>
+<DAQChannel>
+<Name>source</Name>
+<Val>OnboardClock</Val>
+</DAQChannel>
+<I32>
+<Name>sample mode</Name>
+<Val>10178</Val>
+</I32>
+<I32>
+<Name>samples per channel</Name>
+<Val>200000</Val>
+</I32>
+</Cluster>
+</Cluster>
+</LVData>
